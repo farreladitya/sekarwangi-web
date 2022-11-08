@@ -27,6 +27,10 @@ Route::get('/login', function () {
 Route::get('/detail', function () {
     return view('detail');
 });
+Route::get('/contactus', function () {
+    return view('contactus');
+});
+
 
 
 // Dashboard Product

@@ -50,6 +50,7 @@
                                     <div class="px-3 py-3">
                                         @foreach($products as $p)
                                         <form action="/dashboard/update" method="post" enctype="multipart/form-data">
+                                            
                                             {{ csrf_field() }}
                                             <input type="hidden" value="" name="namamitra">
                                             <div class="mb-4">
@@ -61,7 +62,6 @@
                                             <div class="mb-4">
                                                 <label class="block mb-2 text-sm font-medium text-gray-900">Category</label>
                                                 <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " name="category_id">
-                                                    <option  value="">--Select Category--</option>
                                                     @foreach($categories as $c)
                                                     <option value="{{$c->id}}">{{$c->name}}</option>
                                                     @endforeach
@@ -75,7 +75,7 @@
                                               </div>
                                             <div class="mb-4">
                                             <label class="block mb-2 text-sm font-medium text-gray-900 " for="file_input">Upload file</label>
-                                            <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer p-2.5" id="file_input" name="image" value="{{$p->image}}" type="file">
+                                            <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer p-2.5" id="image" name="image" value="{{ URL::asset('/product_image/'.$p->image) }}" type="file">
                                             <img  src="{{ url('/product_image/'.$p->image) }}" class="px-2 py-2 mb-3" style="width: 100px">
                                         </div>
                                             <button type="submit" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Submit</button>

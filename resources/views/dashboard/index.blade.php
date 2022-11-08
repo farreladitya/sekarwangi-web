@@ -84,6 +84,7 @@
                                                     <td class="py-4 px-6">
                                                         {{ $p->name }}
                                                     </td>
+
                                                     <td class="py-4 px-6">
                                                         {{ $p->category_id}}
                                                     </td>

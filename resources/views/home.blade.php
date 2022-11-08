@@ -259,6 +259,48 @@
             </div>
             @endforeach
     </div>
+    <div class="container py-5 bg-white mt-5">
+        <div class="text-3xl font-bold flex justify-center mb-3 ">About Us</div>
+
+        <h3 class="text-xl font-semibold">Dimana membeli bunga untuk acara di Surabaya / atau datang langsung ke toko bisa...? Kenapa SEKARWANGI</h3>
+        <div class="text-md font-normal flex justify-between mb-2">Saat ini begitu banyak penjual karangan bunga papan di Kota Surabaya ditambah lagi dengan penjual yang memasarkan secara online. Namun hal terpenting adalah ketelatenan pengerjaan kerapian dan keindahan hasil tersebut , banyak toko online jual bahkan yang belum ada tokonya pun ikut jualan dan yang belum berpengalaman pun ikut menjual dengan ini kita sebagai toko bunga yang sudah lama puluhan tahun berpengalaman menjual bunga ingin memberi pandangan ke pelanggan dengan perbedaan selisih harga sedikit tapi hasil memuaskan istilah jawanya Ono Rego Ono Rupo ( ada harga ada kualitas ) dimana bisa dilihat saja untuk customer review , ulasan dll hasil pengerjaan bunga toko kami rapi menambah kesan mewah Mau BUKTI..!!! di market place seperti Tokopedia (Sekarwangiflorist) sudah banyak pesanan dari seluruh Indonesia melalui aplikasi tersebut agar transaksi aman bagi pembeli bisa cek langsung toko kami cek ulasan dan bintang dari aplikasi tersebut , Sudah puluhan ribu pelanggan yang sudah puas dengan hasil toko kami itu adalah suatu kepercayaan terhadap toko kami.</div>
+        <div class="text-md font-normal flex justify-between mb-2">Sekarwangiflorist surabaya selalu memberikan jaminan kesegaran bunga tersebut , jangan sampai anda ingin mendapatkan harga murah namun kecewa dengan hasil bunga yang telah terkirim /tidak sesuai pemesanan.contoh pelanggan baru kita yang kasih ulasan seperti itu ada dimana kurang begitu puas setelah beli online dengan harga yang lebih murah dibawah standar dengan terhadap hasil pemesanannya dan banyak komplain tidak di gubris karena pengerjaan cepat asal2lan akhirnya mengecewakan  untuk itu</div>
+        <div class="text-md font-normal flex justify-between mb-2">Dapatkan harga terbaik untuk pemesanan bunga papan di kota Surabaya untuk berbagai jenis karangan bunga dan berbagai acara seperti Turut berduka cita , Pernikahan ( Happy Wedding ), Ucapan Selamat dan Sukses . grand opening , Anda akan mendapatkan kemudahan pemesanan dan pengiriman yang cepat bersama kami sampai tiba dilokasi dengan bukti kita kirim foto dan video pas dilokasi acara tersebut.
+            Anda dapat mempercayakan pemesanan bunga papan di kota surabaya di Sekarwangiflorist Surabaya</div>
+
+    </div>
+
+    <div  class="container py-3 bg-[url('/img/bg-card-1.jpg')]">
+        <div class="text-3xl font-black text-center mb-3 mt-2">Mengapa Sekarwangi Florist ?</div>
+            <a href="#" class="mb-8 block p-6 bg-white rounded-lg border border-gray-200 shadow-md ">
+                <div class="flex justify-center">
+                    <img src="img/flower-bouquet.png" class="w-16">
+                </div>
+                <h5 class="flex justify-center mb-2 text-2xl font-bold tracking-tight text-gray-900 mt-2">Proses Cepat</h5>
+                    <p class="flex justify-center  text-center font-normal text-gray-700">Proses desain & pengerjaan cepat, 2 jam saja sudah siap dikirim</p>
+            </a>
+            <a href="#" class="mb-8 block p-6 bg-white rounded-lg border border-gray-200 shadow-md ">
+                <div class="flex justify-center">
+                    <img src="img/fast-delivery.png" class="w-16">
+                </div>
+                <h5 class="flex justify-center mb-2 text-2xl font-bold tracking-tight text-gray-900 mt-2">Gratis Ongkir</h5>
+                    <p class="flex justify-center  text-center font-normal text-gray-700">Free ongkir wilayah Surabaya & sekitarnya</p>
+            </a>
+            <a href="#" class="mb-8 block p-6 bg-white rounded-lg border border-gray-200 shadow-md ">
+                <div class="flex justify-center">
+                    <img src="img/price-tag.png" class="w-16">
+                </div>
+                <h5 class="flex justify-center mb-2 text-2xl font-bold tracking-tight text-gray-900 mt-2">Harga Bersahabat</h5>
+                    <p class="flex justify-center  text-center font-normal text-gray-700">Harga terjangkau karena kami adalah tangan pertama</p>
+            </a>
+            <a href="#" class="mb-8 block p-6 bg-white rounded-lg border border-gray-200 shadow-md ">
+                <div class="flex justify-center">
+                    <img src="img/24-hours.png" class="w-16">
+                </div>
+                <h5 class="flex justify-center mb-2 text-2xl font-bold tracking-tight text-gray-900 mt-2">Toko Buka 24 Jam</h5>
+                    <p class="flex justify-center  text-center font-normal text-gray-700">Toko kami buka 24 jam. Kami siap untuk melayani Anda setiap saat!</p>
+            </a>
+    </div>
     <a href="https://wa.me/6282232259990/" style="position: fixed; bottom:30px; right:10px" class=" w-20"><img src="{{ asset('img/whatsapp.png') }}"></a>
 
 <footer class="p-4 bg-gray-100 sm:p-6 dark:bg-gray-900">

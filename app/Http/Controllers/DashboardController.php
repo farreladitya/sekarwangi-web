@@ -69,7 +69,14 @@ class DashboardController extends Controller
     // update data pegawai
     public function update(Request $request)
     {
+        $this->validate($request, [
 
+            'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+
+
+        ]);
+
+        if($request->hasfile('image')){
         $file = $request->file('image');
 
 
@@ -79,31 +86,21 @@ class DashboardController extends Controller
             $tujuan_upload = 'product_image';
             $file->move($tujuan_upload,$nama_file);
 
+        // update data pegawai
             DB::table('products')->where('id',$request->id)->update([
                 'name' => $request->name,
                 'category_id' => $request->category_id,
                 'price' => $request->price,
                 'image' => $nama_file
             ]);
+        }else{
+            DB::table('products')->where('id',$request->id)->update([
+                'name' => $request->name,
+                'category_id' => $request->category_id,
+                'price' => $request->price,
 
-
-
-        // // update data pegawai
-        // if($request->file('image')){
-        //     DB::table('products')->where('id',$request->id)->update([
-        //         'name' => $request->name,
-        //         'category_id' => $request->category_id,
-        //         'price' => $request->price,
-        //         'image' => $nama_file
-        //     ]);
-        // }else{
-        //     DB::table('products')->where('id',$request->id)->update([
-        //         'name' => $request->name,
-        //         'category_id' => $request->category_id,
-        //         'price' => $request->price,
-
-        //     ]);
-        // }
+            ]);
+        }
         // alihkan halaman ke halaman pegawai
         return redirect('/dashboard');
     }
